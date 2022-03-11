@@ -1,6 +1,12 @@
 import csv 
 import math
 
+class Node:
+    def __init__(self):
+        self.value = None
+        self.next = None
+        self.childs = None
+
 def read_data(filename):
     """ read csv file and return header and data  """
     with open(filename, 'r') as csvfile:
